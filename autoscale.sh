@@ -28,7 +28,7 @@ if [ "$INSTANCE_COUNT" -lt 5 ]; then
  $GCLOUD_BIN compute instance-groups managed resize $INSTANCE_GROUP --size=3 --zone=$Zone
 
 else
-  echo "Instance scaling already triggered, Skipping....Manissha..." >> /var/log/autoscale.log
+  echo "Instance scaling already triggered, Skipping...." >> /var/log/autoscale.log
 
 fi
 
